@@ -1,0 +1,4 @@
+<!--components/header/header.wxml-->
+<view class="header"  style="padding-top:{{statusBarHeight}}px;background:{{bgColor}}">
+  {{headerTitle}}
+</view>
