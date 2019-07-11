@@ -14,6 +14,10 @@ Component({
     bgColor:{
       type: String,
       value: 'blue'
+    },
+    city:{
+      type: String,
+      value: '郑州市'
     }
   },
 
