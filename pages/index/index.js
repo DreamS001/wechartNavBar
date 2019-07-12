@@ -55,5 +55,12 @@ Page({
   onReady:function(){
     //获得header组件
     this.header= this.selectComponent("#header");
+  },
+  //确认事件
+  _confirmEvent() {
+    console.log('你点击了确定');
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
   }
 })

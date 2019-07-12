@@ -1,6 +1,6 @@
 <!--components/header/header.wxml-->
 <view class="header"  style="padding-top:{{statusBarHeight}}px;background:{{bgColor}}">
-    <view class="header_left">
+    <view class="header_left"  catchtap='_confirmEvent'>
         <image class="icon" src="../../asset/images/icon/dw.png" />
         <text>{{city}}</text>
     </view>

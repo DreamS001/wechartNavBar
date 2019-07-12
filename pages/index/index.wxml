@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="header-box">
-  <header id="header" statusBarHeight="{{statusBarHeight}}" headerTitle="给你的aaaaaaaaaaa" bgColor="#cc0000" city="北京市1111111"></header>
+  <header id="header" bind:confirmEvent="_confirmEvent" statusBarHeight="{{statusBarHeight}}" headerTitle="给你的aaaaaaaaaaa" bgColor="-webkit-linear-gradient(top, #6495F6 0%,#29A1F7 100%)" city="北京市1111111"></header>
 </view>
 
 <view class="container">
