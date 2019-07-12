@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="header-box">
-  <header id="header" bind:chosecity="_chosecity" isCity="true" city="{{cityBase}}" headerTitle="给你的aaaaaaaaaaa" bgColor="-webkit-linear-gradient(top, #6495F6 0%,#29A1F7 100%)" statusBarHeight="{{statusBarHeight}}"></header>
+  <header id="header" bind:chosecity="_chosecity" isShow="1" city="{{cityBase}}" headerTitle="给你的aaaaaaaaaaa" bgColor="-webkit-linear-gradient(top, #6495F6 0%,#29A1F7 100%)" statusBarHeight="{{statusBarHeight}}"></header>
 </view>
 
 <view class="container">

@@ -19,13 +19,9 @@ Component({
       type: String,
       value: '郑州市'
     },
-    isCity:{
-      type:Boolean,
-      value:false
-    },
-    isBack:{
-      type:Boolean,
-      value:false
+    isShow:{
+      type:String,
+      value:'0'
     }
   },
 

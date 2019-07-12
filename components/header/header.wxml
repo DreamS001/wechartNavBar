@@ -1,10 +1,10 @@
 <!--components/header/header.wxml-->
 <view class="header"  style="padding-top:{{statusBarHeight}}px;background:{{bgColor}}">
-    <view class="header_left" wx:if="{{isCity}}"  catchtap='_chosecity'>
+    <view class="header_left" wx:if="{{isShow==1}}"  catchtap='_chosecity'>
         <image class="icon" src="../../asset/images/icon/dw.png" />
         <text>{{city}}</text>
     </view>
-    <view class="header_left back" wx:elif="{{isBack}}"  catchtap='_tapback'>
+    <view class="header_left back" wx:elif="{{isShow==2}}"  catchtap='_tapback'>
         <image class="icon" src="../../asset/images/icon/left_jt.png" />
         <text>返回</text>
     </view>
