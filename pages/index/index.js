@@ -8,7 +8,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    cityBase:app.globalData.cityBase
   },
   //事件处理函数
   bindViewTap: function() {
@@ -57,10 +58,13 @@ Page({
     this.header= this.selectComponent("#header");
   },
   //确认事件
-  _confirmEvent() {
+  _chosecity() {
     console.log('你点击了确定');
     wx.navigateTo({
       url: '../logs/logs'
+    })
+    this.setData({
+      cityBase:'北京市'
     })
   }
 })

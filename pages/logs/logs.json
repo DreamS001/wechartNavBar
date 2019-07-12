@@ -1,4 +1,5 @@
 {
-  "navigationBarTitleText": "查看启动日志",
-  "usingComponents": {}
+  "usingComponents": {
+    "header": "../../components/header/header"
+  }
 }

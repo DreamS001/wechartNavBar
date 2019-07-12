@@ -1,8 +1,12 @@
 <!--components/header/header.wxml-->
 <view class="header"  style="padding-top:{{statusBarHeight}}px;background:{{bgColor}}">
-    <view class="header_left"  catchtap='_confirmEvent'>
+    <view class="header_left" wx:if="{{isShow}}"  catchtap='_chosecity'>
         <image class="icon" src="../../asset/images/icon/dw.png" />
         <text>{{city}}</text>
+    </view>
+    <view class="header_left back" wx:else  catchtap='_tapback'>
+        <image class="icon" src="../../asset/images/icon/left_jt.png" />
+        <text>返回</text>
     </view>
     <view class="header_middle">{{headerTitle}}</view>
     <view class="header_right"></view>

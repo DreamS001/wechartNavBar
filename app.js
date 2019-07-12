@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
+    cityBase:'请选择',
     statusBarHeight:wx.getSystemInfoSync()['statusBarHeight'],//全局设置手机顶部状态栏的高度
   }
 })

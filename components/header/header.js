@@ -18,6 +18,10 @@ Component({
     city:{
       type: String,
       value: '郑州市'
+    },
+    isShow:{
+      type:Boolean,
+      value:false
     }
   },
 
@@ -32,9 +36,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    _confirmEvent() {
+    _chosecity() {
       //触发成功回调
-      this.triggerEvent("confirmEvent");
+      this.triggerEvent("chosecity");
+    },
+    _tapback(){
+      this.triggerEvent("tapback")
     }
   }
 })

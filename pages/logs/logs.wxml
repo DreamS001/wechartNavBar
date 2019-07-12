@@ -1,4 +1,7 @@
 <!--logs.wxml-->
+<view class="header-box">
+  <header id="header" bind:tapback="_tapback" isShow="" city="" headerTitle="日志" bgColor="-webkit-linear-gradient(top, #6495F6 0%,#29A1F7 100%)" statusBarHeight="{{statusBarHeight}}"></header>
+</view>
 <view class="container log-list">
   <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>

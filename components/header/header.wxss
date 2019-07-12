@@ -24,9 +24,17 @@
     height: 40rpx;
     vertical-align: middle;
 }
+.header .header_left.back{
+    padding-left: 35rpx;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
 .header .header_left>text{
     width: 140rpx;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.header .header_left.back>text{
+    width: 84rpx;
 }
