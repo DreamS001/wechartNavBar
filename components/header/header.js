@@ -19,7 +19,11 @@ Component({
       type: String,
       value: '郑州市'
     },
-    isShow:{
+    isCity:{
+      type:Boolean,
+      value:false
+    },
+    isBack:{
       type:Boolean,
       value:false
     }
