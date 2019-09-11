@@ -1,0 +1,4 @@
+/* components/slider/slider.wxss */
+.slider-box{
+  margin-top: 100rpx;
+}

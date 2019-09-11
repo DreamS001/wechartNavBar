@@ -1,0 +1,13 @@
+/* pages/test/index.wxss */
+.btn{
+  margin-top: 200rpx;
+}
+input{
+  border: 2rpx solid red;
+  text-align: center;
+}
+
+
+.slider-box{
+  margin-top: 100rpx;
+}

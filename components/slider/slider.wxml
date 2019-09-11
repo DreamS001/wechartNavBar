@@ -1,0 +1,8 @@
+<!--components/slider/slider.wxml-->
+<input type="text" bindinput="get" placeholder="请输入" value="{{slider}}" />
+
+<view class="slider-box">
+  <slider bindchanging="_slider2change" step="1" value="{{slider}}"/>
+</view>
+
+<button catchtap="_add">增加</button>

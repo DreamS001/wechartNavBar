@@ -1,0 +1,24 @@
+<!--pages/test/index.wxml-->
+<button class="btn" wx:if="{{isAuth}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">购买</button>
+<button class="btn" wx:else bindtap="goAlert">购买</button>
+
+
+<view>{{num1}}</view>
+
+<!-- <input type="text" bindinput="get" placeholder="请输入" value="{{slider}}" /> -->
+<!-- <input type="text" bindinput="get1" placeholder="请输入" />
+<input type="text" bindinput="get2" placeholder="请输入" /> -->
+
+
+<view class="slider-box">
+  <!-- <slider bindchange="slider2change1" step="1" value="{{slider}}"/> -->
+</view>
+
+
+
+<slider id="slider" bind:slider2change="_slider2change" bind:add="_add"></slider>
+
+<slider id="slider" bind:slider2change="_slider3change"></slider>
+
+<slider id="slider" bind:slider2change="_slider4change"></slider>
+

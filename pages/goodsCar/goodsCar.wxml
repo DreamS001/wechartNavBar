@@ -1,0 +1,83 @@
+<!--pages/goodsCar/goodsCar.wxml-->
+<view class="header-box">
+  <header id="header" bind:chosecity="_chosecity" headerTitle="给你的aaaaaaaaaaa" bgColor="-webkit-linear-gradient(top, #6495F6 0%,#29A1F7 100%)" statusBarHeight="{{statusBarHeight}}"></header>
+</view>
+
+
+
+<view class="container">
+  <!--最外层大盒子  -->
+  <view class="collect_big_box">
+    <!--列表盒子  -->
+    <view class="collect_list_box">
+      <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 990rpx;">
+  
+        <!--中部搜索结果列表盒子-->
+  
+        <view class="recordList_box">
+          <!--外层大盒子  -->
+          <view class="content_box" wx:for="{{arr}}" wx:key="{{key}}">
+            <!--中部盒子  -->
+            <view class="view_ce">
+              <view style="{{item.txtStyle}}" class="content_box_center" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+                <!--图片盒子  -->
+                <view class="ProductIco_box">
+                  <image class="ProductIco" src="{{item.image}}"></image>
+                </view>
+                <!--内容  -->
+                <view class="view_content">
+                  <view class='view_title'>{{item.title}}</view>
+                  <view class="view_fl">
+                    <text>{{item.sort}}</text>
+                    <text>{{item.color}}</text>
+                    <!--价格和按钮  -->
+  
+                    <view class="view_btn_box">
+                      <text>¥ {{item.price}}</text>
+                      <!--产品数量不为 0 -->
+                      <view class="view_btn" wx:if="{{item.state == 1}}">
+                        <view class="view_img_left" bindtap='numminus' data-index="{{index}}">
+                          <image src="../../images/icon_jian@2x.png"></image>
+                        </view>
+                        <!-- <view class="view_text_center"></view> -->
+                        <input class="view_text_center" value="{{item.num}}" bindinput='input_num' data-index="{{index}}"></input>
+                        <view class="view_img_right" bindtap='numadd' data-index="{{index}}">
+                          <image src="../../images/icon_jia@2x.png"></image>
+                        </view>
+                      </view>
+                      <!--产品数量为0  -->
+                      <view class="view_add" wx:if="{{item.state == 0}}">
+                        <view class="view_img_add" bindtap='showadd' data-index="{{index}}">
+                          <image src="../../images/icon_jia@2x.png"></image>
+                        </view>
+                      </view>
+                    </view>
+  
+  
+                  </view>
+                </view>
+  
+              </view>
+            </view>
+  
+            <!--删除按钮  -->
+            <view class="delete_btn" bindtap='delete_btn' data-index="{{index}}">删除</view>
+          </view>
+        </view>
+  
+      </scroll-view>
+    </view>
+    <view class='buy_btn_box'>
+      <view class="collect_bottom">
+        <view class="collect_right">
+          <text class="collect_one">共计{{add_car_num}}件商品</text>
+          <text class="collect_two">¥ {{price}}</text>
+        </view>
+      </view>
+      <view class='buy_btn'>
+        <text>马上购买</text>
+      </view>
+    </view>
+  </view>
+</view>
+

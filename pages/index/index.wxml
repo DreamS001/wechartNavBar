@@ -4,7 +4,7 @@
 </view>
 
 <view class="container">
-  <view class="userinfo">
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -17,5 +17,18 @@
 
   <view>
     <text class="iconfont icon-dingwei2">1111</text>
+  </view> -->
+
+  <form bindsubmit="formSubmit" report-submit='true'>
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+    </view>
+  </form>
+
+
+
+  <view class="slider-box">
+    <slider bindchange="slider2change" step="5"/>
   </view>
+  
 </view>

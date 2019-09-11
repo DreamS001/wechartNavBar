@@ -21,9 +21,7 @@
 }
 
 
-.header-box{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+.slider-box{
+  margin-top: 100rpx;
 }
+

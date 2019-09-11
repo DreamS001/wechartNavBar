@@ -10,3 +10,13 @@
   box-sizing: border-box;
   margin-top: 130rpx;
 } 
+.header-box{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container{
+  padding: 10rpx;
+  box-sizing: border-box;
+}

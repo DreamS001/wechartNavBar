@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/test/index",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/goodsCar/goodsCar"
   ],
   "window": {
-    "navigationStyle":"custom",
+    "navigationStyle": "custom",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
